@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/Users/PedroOliveira/Documents/gitOlist/checkstyle-test/src/main/java/com/example/demo/ErrorExamples.java">
+<error line="12" column="13" severity="error" message="Must have at least one statement." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+<error line="14" severity="error" message="Empty catch block." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"/>
+<error line="14" column="11" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="20" column="17" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="20" column="22" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="25" severity="error" message="&apos;if&apos; has incorrect indentation level 16, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="26" severity="error" message="&apos;if&apos; has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="26" column="25" severity="error" message="Nested if-else depth is 2 (max allowed is 1)." source="com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"/>
+<error line="26" column="54" severity="error" message="Must have at least one statement." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+<error line="28" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="29" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 16, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="34" severity="error" message="&apos;method def&apos; child has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/Users/PedroOliveira/Documents/gitOlist/checkstyle-test/src/main/java/com/example/demo/CheckstyleTestApplication.java">
+</file>
+<file name="/Users/PedroOliveira/Documents/gitOlist/checkstyle-test/src/main/java/com/example/demo/Annotation.java">
+<error line="7" severity="error" message="Annotation &apos;Data&apos; should be alone on line." source="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheck"/>
+<error line="7" severity="error" message="Annotation &apos;Setter&apos; should be alone on line." source="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheck"/>
+</file>
+<file name="/Users/PedroOliveira/Documents/gitOlist/checkstyle-test/src/main/resources/application.properties">
+</file>
+</checkstyle>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">
+<!-- modulo raiz/inicial -->
+<!-- configurações a nivel de Arquivo -->
+<module name="Checker">
+	<!-- Responsavel por valirdar os arquivos de entrada -->
+	<!-- tamanho de arquivo -->
+	<module name="FileLength">
+	<!-- Tamanho do espaço de tab -->
+	<property name="tabWidth" value="4" />
+  </module>
+
+	<!-- tamanho de linhas por arquivo -->
+	<module name="LineLength">
+		<property name="fileExtensions" value="java" />
+	</module>
+	<!-- Extensões para serem verificadas -->
+	<property name="fileExtensions" value="java, properties, xml" />
+	<!-- Verificação se existe javadoc para a package -->
+	<!-- <module name="JavadocPackage"/> -->
+	<!-- Validações dentro do arquivo java especificas -->
+	<module name="TreeWalker">
+		<!-- modulo de anotações -->
+		<!-- permite apenas uma anotação por linha -->
+		<module name="AnnotationLocation" />
+		<!-- Evita blocos em branco -->
+		<module name="EmptyBlock" />
+		<!-- Evita blocos de catch vazios -->
+		<module name="EmptyCatchBlock" />
+		<!-- Chaves devem estar sempre junto a linha que abriu -->
+		<module name="LeftCurly" />
+    <!--Order de declaração Variaveis estaticas, publicas e protegidas e privadas variaveis de instancia construtores e metodos-->
+    <module name = "DeclarationOrder" />
+    <!--Não permite catch com exceções básicas-->
+    <module name = "IllegalCatch" />
+    <!--Não permite os números mágicos. números que aparecem sem definição-->
+    <module name = "MagicNumber" />
+    <!--Evita loops aninhados-->
+    <module name = "NestedForDepth" />
+    <!--Evita IFs aninhados-->
+    <module name = "NestedIfDepth" />
+    <!--Indentação -->
+    <module name = "Indentation" />
+		<!-- Tamanho do metodo -->
+		<module name="MethodLength">
+			<!-- é possivel definir um Id para definição da regra -->
+			<!-- <property name = "id" value = "stringEqual" /> -->
+			<!-- Definição do niver de severidade -->
+			<property name="severity" value="warning" />
+			<property name="max" value="60" />
+		</module>
+		<!-- falsaver informações de um modulo especifico em um txt -->
+		<!--
+		<module name = "com.mycompany.listeners.VerboseListener">
+		<property name = "file" value = "audit.txt" />
+		</module>
+		</module>
+		-->
+	</module>
+</module>
